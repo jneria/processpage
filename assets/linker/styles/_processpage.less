@@ -1,0 +1,61 @@
+@import 'globals/_reset.less';
+@import 'globals/_mixins.less';
+@import 'globals/_variables.less';
+
+
+
+
+.container{
+    margin: 0 auto;
+    max-width: 1024px;	
+}
+
+.banner-region{
+	background-color: none;
+	.container img{
+		float: left;
+		padding: 28px .5em;
+		&:nth-child(even){
+			float: right;
+			padding: 35px .5em;
+			}
+		}
+	}
+
+.intro-region{
+	.grad-purp-dkpurple-vert;	
+}
+
+.projectrequirements-region{
+	background-color: @purple;
+}
+.UX-region{
+	
+}
+.visualdesign-region{
+	.grad-purp-blue-diag;
+
+}
+.frontend-region{
+	
+}
+.backend-region{
+	
+}
+.test-region{
+	.grad-purple-vert;
+}
+.conclusion-region{
+	background-color: @purple;
+}
+.footer-region{
+	
+}
+
+h1{
+	text-align: center;
+}
+
+p{
+	text-align: center;
+}
