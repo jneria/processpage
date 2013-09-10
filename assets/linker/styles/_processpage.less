@@ -2,12 +2,22 @@
 @import 'globals/_mixins.less';
 @import 'globals/_variables.less';
 
+/* --------Text Styling-------- */ 
+h1, p {
+	text-align: center;
+	color: white;
+	margin-top: .75em;
+	margin-bottom: .75em;
+	
+}
+
 
 /* --------Layout--------  */
 
 .container{
     margin: 0 auto;
-    max-width: 1024px;	
+    max-width: 1200px;	
+    padding-top: 75px;
 }
 
 .banner-region{
@@ -44,12 +54,41 @@
 		}
 }
 .visualdesign-region{
+
+	h1, p {
+	text-align: left;
+		}
+
 	.grad-purp-blue-diag;
-	img{
-	left: 50%;
+	li.image{
+		width: 30%;
+		float: left;
+		margin-left: -120px;
+		}
+
+	li.text{
+		width: 30%;
+		float: left;
+		margin-right: 6%;
+		margin-left: 6%;
+		}
+		
 }
-}
+
 .frontend-region{
+
+	li.image{
+		width: 30%;
+		float: left;
+		margin-left: -120px;
+		}
+
+	li.text{
+		width: 30%;
+		float: left;
+		margin-right: 6%;
+		margin-left: 6%;
+		}
 	
 }
 .backend-region{
@@ -68,9 +107,6 @@
 .footer-region{
 	
 }
-/* --------Text Styling--------  */
-h1,p {
-	text-align: center;
-	margin-right: 10%;
-	margin-left: 10%;
-}
+
+
+
