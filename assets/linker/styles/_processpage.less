@@ -3,7 +3,7 @@
 @import 'globals/_variables.less';
 
 
-
+/* --------Layout--------  */
 
 .container{
     margin: 0 auto;
@@ -23,18 +23,31 @@
 	}
 
 .intro-region{
-	.grad-purp-dkpurple-vert;	
+	.grad-purp-dkpurple-vert;
+	img{
+		margin-right: auto;
+		margin-left: auto;
+		}
 }
 
 .projectrequirements-region{
 	background-color: @purple;
+	img{
+		margin-right: auto;
+		margin-left: auto;
+		}
 }
 .UX-region{
-	
+	img{
+		margin-right: auto;
+		margin-left: auto;
+		}
 }
 .visualdesign-region{
 	.grad-purp-blue-diag;
-
+	img{
+	left: 50%;
+}
 }
 .frontend-region{
 	
@@ -47,15 +60,17 @@
 }
 .conclusion-region{
 	background-color: @purple;
+	img{
+		margin-right: auto;
+		margin-left: auto;
+		}
 }
 .footer-region{
 	
 }
-
-h1{
+/* --------Text Styling--------  */
+h1,p {
 	text-align: center;
-}
-
-p{
-	text-align: center;
+	margin-right: 10%;
+	margin-left: 10%;
 }
