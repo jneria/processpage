@@ -2,12 +2,34 @@
 @import 'globals/_mixins.less';
 @import 'globals/_variables.less';
 
+
+article, aside, figure, footer, header, hgroup,
+menu, nav, section { display: block; }
+
+
 /* --------Text Styling-------- */ 
-h1, p {
+h1{
+	font-family: 'Open Sans', sans-serif;
+	font-style: normal;
+	font-weight: 300;
+}
+
+h2{
+	font-family: 'Open Sans Condensed';
+	font-style: normal;
+	font-weight: 300;
+}
+p{
+	font-family: 'Open Sans' , sans-serif;
+	font-style: normal;
+	font-weight: 500;
+}
+
+h1, h2 {
 	text-align: center;
 	color: white;
-	margin-top: .75em;
-	margin-bottom: .75em;
+	padding-top: .75em;
+	padding-bottom: .75em;
 	
 }
 
@@ -16,8 +38,10 @@ h1, p {
 
 .container{
     margin: 0 auto;
-    max-width: 1200px;	
-    padding-top: 75px;
+    max-width: 1200px;
+    width: 90%;
+    max-width: 1200px;
+    min-width: 480px;
 }
 
 .banner-region{
@@ -31,10 +55,18 @@ h1, p {
 			}
 		}
 	}
+	
+.banner-region.container p {
+color: #b65555;
+}
 
 .intro-region{
+	.intro-color;
 	.grad-purp-dkpurple-vert;
+	padding-bottom: 150px;
 	img{
+		max-width: 100%;
+		height: auto;
 		margin-right: auto;
 		margin-left: auto;
 		}
@@ -42,6 +74,7 @@ h1, p {
 
 .projectrequirements-region{
 	background-color: @purple;
+	padding-bottom: 150px;
 	img{
 		margin-right: auto;
 		margin-left: auto;
@@ -54,28 +87,40 @@ h1, p {
 		}
 }
 .visualdesign-region{
+	padding-top: 75px;
+	padding-left: 20px;
 
 	h1, p {
 	text-align: left;
 		}
+		
+	ul{
+		display: table;
+	}
+		
+	li.text{
+		display: table-cell;
+		vertical-align: middle;
+		width: 40%;
+/*		float: left;*/
+		margin-right: 6%;
+		margin-left: 6%;
+		padding-bottom: 75px;
+	}
+	
 
 	.grad-purp-blue-diag;
+	
 	li.image{
 		width: 30%;
 		float: left;
-		margin-left: -120px;
+		margin-left: -60px;
 		}
-
-	li.text{
-		width: 30%;
-		float: left;
-		margin-right: 6%;
-		margin-left: 6%;
-		}
-		
 }
 
 .frontend-region{
+	padding-top: 75px;
+	padding-left: 20px;
 
 	li.image{
 		width: 30%;
@@ -96,6 +141,10 @@ h1, p {
 }
 .test-region{
 	.grad-purple-vert;
+	img{
+		margin-right: auto;
+		margin-left: auto;
+		}
 }
 .conclusion-region{
 	background-color: @purple;
