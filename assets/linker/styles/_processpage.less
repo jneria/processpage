@@ -25,9 +25,10 @@ p{
 	font-weight: 500;
 }
 
-h1, h2 {
+h1, h2, p {
 	text-align: center;
-	color: white;	
+	color: white;
+	padding-bottom: 15px;
 }
 
 
@@ -56,8 +57,10 @@ h1, h2 {
 
 .intro-region{
 	.intro-color;
+	.intro-padding;
 	.grad-purp-dkpurple-vert;
 	img{
+		padding-top: 15px;
 		max-width: 100%;
 		height: auto;
 		margin-right: auto;
@@ -70,75 +73,93 @@ h1, h2 {
 	.projectrequirements-padding;
 	background-color: @purple;
 	img{
+		padding-bottom: 40px;
 		margin-right: auto;
 		margin-left: auto;
 		}
 }
 .UX-region{
 	.UX-color;
+	.UX-padding;
 	img{
+		padding-top: 110px;
 		margin-right: auto;
 		margin-left: auto;
 		}
 }
 .visualdesign-region{
 	.visualdesign-color;
-	padding-top: 75px;
-	padding-left: 20px;
+	.visualdesign-padding;
+	.grad-purp-blue-diag;
 
+	.container{display: table;}	
 	h1, p {
 	text-align: left;
+	width: 444px;	
+	margin-left: 75px;
 		}
-		
-	ul{
-		display: table;
-	}
-		
-	li.text{
+				
+	article{
 		display: table-cell;
 		vertical-align: middle;
-		width: 40%;
-/*		float: left;*/
-		margin-right: 6%;
-		margin-left: 6%;
-		padding-bottom: 75px;
-	}
+			}
 	
-
-	.grad-purp-blue-diag;
-	
-	li.image{
-		width: 30%;
-		float: left;
-		margin-left: -60px;
+	img{
+		padding-top: 100px;
+		margin-left: -75px;
 		}
 }
 
 .frontend-region{
 	.frontend-color;
-	padding-top: 75px;
-	padding-left: 20px;
+	.frontend-padding;
 
-	li.image{
-		width: 30%;
-		float: left;
-		margin-left: -120px;
+	.container{display: table;}	
+	h1, p {
+	text-align: left;
+	width: 444px;	
+	margin-left: 75px;
 		}
-
-	li.text{
-		width: 30%;
-		float: left;
-		margin-right: 6%;
-		margin-left: 6%;
-		}
+				
+	article{
+		display: table-cell;
+		vertical-align: middle;
+			}
 	
+	img{
+		padding-top: 90px;
+		margin-left: -150px;
+		}
 }
 .backend-region{
 	.backend-color;
+	.backend-padding;
+	background-color: #f1f2f2;
+	
+	.container{display: table;}	
+	h1, p {
+	text-align: left;
+	width: 510px;	
+	margin-left: 75px;
+	margin-right: 75px;
+		}
+				
+	article{
+		display: table-cell;
+		vertical-align: middle;
+			}
+	
+	img{
+		padding-top: 90px;
+		padding-bottom: 90px;
+		}
 }
 .test-region{
 	.test-color;
+	.test-padding;
 	.grad-purple-vert;
+	.container{width: 60%;}
+		
 	img{
 		margin-right: auto;
 		margin-left: auto;
@@ -146,14 +167,18 @@ h1, h2 {
 }
 .conclusion-region{
 	.conclusion-color;
-	background-color: @purple;
+	.conclusion-padding;
+	background-color: @dark-purple;
 	img{
 		margin-right: auto;
 		margin-left: auto;
 		}
 }
 .footer-region{
-	
+	padding: 0px;
+	height: 810px;
+	background: url(../../img/icon_arrow.png) center -36px no-repeat @darkest-gray;
+
 }
 
 
